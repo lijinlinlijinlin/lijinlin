@@ -8,36 +8,36 @@
 2.重用组件库
 3.react的语法叫做jsx，解析过后是js代码
 #### 如何在普通的js中引用jsx的语法代码
-![]()
+![](DraggedImage.png)
 #### 基础语法
 1.原声html标签和自定义的标签，在react中统称为react components，代表的不是一个dom节点，而是一个react components的实例
-![]()
+![](DraggedImage-1.png)
 2.这些react components通过render这个方法来展示到页面上
-![]()
+![](DraggedImage-2.png)
 从代码可以看到，这里是要把hello这个component渲染到id＝contaniner的div中
 3.自定义的hello component的定义：（获取hello这个component的tiltel和name属性值）
-![]()
+![](DraggedImage-3.png)
 引入css的写法
-![]()
+![](DraggedImage-4.png)
 样式直接写在js代码中，最后的代码效果
-![]()
+![](DraggedImage-5.png)
 
 实例应用逻辑：
 ### 项目结构：
-![]()
+![](DraggedImage-6.png)
 
 > html_entries 存放html页面  
 >  js_entries 存放是webpack编译src之后的中间文件的地方,不是编写代码的地方  
 >  src 源代码目录，这里面的entries目录是存放每个页面入口的js，被webpack编译之后会放到 /js_entries  
 > webpack :webpack的配置
 第一步：客户端发出了如下的请求：https://h5.dianping.com/merchant-platform/enroll/activity/enroll.html（这里获取的是一个活动列表页面）
-![]()
+![](DraggedImage-7.png)
 第二步：找到enroll.html
-![]()
+![](DraggedImage-8.png)
 root代表这个页面总体的一个东西，同时会引入这个entries目录下面的enroll.js
-![]()
+![](DraggedImage-9.png)
 首先是root节点的加载
-![]()
+![](DraggedImage-10.png)
 然后是AppModule，AppModule里 面获取的是具体列表内容
 最后是enrollReducer，enrollReducer是对AppModule的内容进行分发
 待续。。。。
@@ -123,4 +123,3 @@ actionCreator(args) =\> action
 在redux里，actionAreator并非是必需的。不过建议用actionAreator代替普通action对象的直接传递。除了能够减少代码量，还可以大大提高代码的可维护性。想象下面的场景再来看回文章开头的例子，应用actionAreator后的代码示例。
 	store.dispatch(addTodo('睡觉'));
 	console.log('state is: ' + store.getState());  // state is: 读书,写作,睡觉
-
