@@ -1,0 +1,17 @@
+创建json： 
+第一种方式生成json： 
+![](json.png)
+2.通过hashmap的方法： 
+![](json-1.png)
+3.javabean创建json 
+![](json-2.png)
+![](json-3.png)
+读取json（引入commom－io的jar包） 
+1.通过文件读取json 
+![](json-4.png)
+用isnull判空
+![](json-5.png)
+利用gson解析
+![](json-6.png)
+![](json-7.png)
+![](json-8.png)
